@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap');
+
+/* Global cursor hide */
+* {
+  cursor: none !important;
+}
+
+body {
+  background: #FFFEF9;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+  animation-fill-mode: backwards;
+}
+
+/* DARK LUXURY BUTTON - Voor lichte achtergronden */
+.luxury-button-dark {
+  display: inline-block;
+  padding: 20px 60px;
+  border: 1px solid #2C2622;
+  color: #2C2622;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.luxury-button-dark span {
+  position: relative;
+  z-index: 10;
+}
+
+.luxury-button-dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #903C0A;
+  transition: left 0.4s ease;
+  z-index: 1;
+}
+
+.luxury-button-dark:hover {
+  border-color: #903C0A;
+  color: white;
+}
+
+.luxury-button-dark:hover::before {
+  left: 0;
+}
+
+/* LIGHT LUXURY BUTTON - Voor donkere achtergronden */
+.luxury-button-light {
+  display: inline-block;
+  padding: 20px 60px;
+  border: 1px solid white;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.luxury-button-light span {
+  position: relative;
+  z-index: 10;
+}
+
+.luxury-button-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s ease;
+  z-index: 1;
+}
+
+.luxury-button-light:hover {
+  color: #2C2622;
+}
+
+.luxury-button-light:hover::before {
+  left: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced specification table hover */
+.spec-row:hover {
+  padding-left: 8px;
+}
+
+/* Gallery image transitions */
+.gallery-image {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

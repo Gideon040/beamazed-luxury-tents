@@ -89,7 +89,7 @@ export default function ProjectsPage() {
             Projects
           </h1>
           <p className="text-[clamp(20px,2.5vw,28px)] font-light leading-relaxed max-w-4xl mx-auto opacity-90 animate-fadeInUp animation-delay-400">
-            Extraordinary spaces we've created across Europe, each telling its own unique story
+            Extraordinary spaces we&apos;ve created across Europe, each telling its own unique story
           </p>
         </div>
 
@@ -191,13 +191,6 @@ export default function ProjectsPage() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
-                    {/* Year Badge */}
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2">
-                      <span className="text-[10px] tracking-[2px] uppercase text-[#2C2622]">
-                        {project.year}
-                      </span>
-                    </div>
                   </div>
 
                   {/* Content */}
@@ -261,12 +254,12 @@ export default function ProjectsPage() {
                   Your Project
                 </p>
                 <h2 className="font-serif text-[clamp(35px,5vw,50px)] font-light mb-8 tracking-[-2px] text-[#2C2622]">
-                  Let's Create Something Extraordinary
+                  Let&apos;s Create Something Extraordinary
                 </h2>
                 
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   Every project in our portfolio started with a conversation. Whether you have 
-                  a clear vision or just the beginning of an idea, we're here to help bring it to life.
+                  a clear vision or just the beginning of an idea, we&apos;re here to help bring it to life.
                 </p>
 
                 <div className="space-y-4 mb-10">
@@ -328,7 +321,7 @@ export default function ProjectsPage() {
               Your Project Awaits
             </h2>
             <p className="text-2xl font-light leading-relaxed mb-16 opacity-90 max-w-3xl mx-auto">
-              Join our portfolio of extraordinary spaces. Let's discuss how we can 
+              Join our portfolio of extraordinary spaces. Let&apos;s discuss how we can 
               bring your vision to life with creativity and precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
